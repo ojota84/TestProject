@@ -1,0 +1,9 @@
+*.pageflow
+.jsdtscope
+*.prefs
+*.core
+*.container
+*.name
+*.component
+*.classpath
+*.project

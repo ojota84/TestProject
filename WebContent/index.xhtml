@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title><ui:insert name="windowTitle">
+       Hola mundo
+      </ui:insert></title>
+</h:head>
+
+<h:body>
+
+	<div class="pageHeading"><ui:insert name="heading">
+        by world1 #{testBean.name}
+        by world2 #{testBean.person.lastName}
+      </ui:insert></div>
+	<h:outputLabel value="#{testBean.name}"></h:outputLabel>
+	<div class="menuAndContent">
+	<div class="menuLeft"><ui:insert name="menuLeft" /></div>
+	<h:form>
+		<h:commandButton id="loginButton" value="test" action="firstPage?faces-redirect=true" />
+		<h:commandButton value="#{testBean.name}" action="firstPage?faces-redirect=true"/>
+	</h:form>
+	<div class="menuRight"><ui:insert name="menuRight">
+	</ui:insert></div>
+	</div>
+
+</h:body>
+</html>
