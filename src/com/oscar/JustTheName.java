@@ -2,7 +2,7 @@ package com.oscar;
 
 import javax.inject.Named;
 
-@Named("theName")
+@Named("theNa")
 public class JustTheName implements Person{
 	private String lastName = "Castiblanco";
 
